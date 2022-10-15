@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG MOBILE | #1 BATTLE ROYALE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- making the navigation bar -->
+    <nav class="navigation flex">
+        <div class="logo_tagline flex">
+            <a href="../html/index.html" class="logo_link">
+                <img src="../images/logo.jpg" alt="loading image" class="logo_image">
+            </a>
+
+            <h1 class="tagline">
+                PUBG MOBILE
+                <span class="tag_span">The original Battle Royole, the first and the best</span>
+            </h1>
+        </div>
+
+        <!-- making the navlist -->
+        <ul class="nav_list flex">
+            <li class="nav_items">HOME</li>
+            <li class="nav_items"><span>ROYALE PASS <img src="../images/dropIcon.png" alt="loading icon"></span></li>
+            <li class="nav_items">NEWS</li>
+            <li class="nav_items">GALLERY</li>
+            <li class="nav_items">ESPORTS</li>
+            <li class="nav_items"><span>EVENTS <img src="../images/dropIcon.png" alt="loading icon"></span></li>
+            <li class="nav_items"><span>Workshop <img src="../images/dropIcon.png" alt="loading icon"></span></li>
+        </ul>
+
+        <!-- making the buttons -->
+        <div class="nav_btn_container flex">
+            <div class="en-us_btn">
+                <img src="../images/earth.png" alt="loading globe"><span>EN-US</span>
+            </div>
+            <div class="cart_btn">
+                <img src="../images/cart.png" alt="loading cart">
+            </div>
+        </div>
+    </nav>
+
+    <!-- making the image slider -->
+    <div class="slider_container">
+        <div class="slider">
+            <img src="../images/slider2.jpg" alt="loading slider" class="slider_image">
+            <div class="img_content">
+                <div class="max_width_para flex">
+                    <div class="paras">
+                        <p class="hp">Mclaren: A legendary car roaring out of your dreams.</p>
+                        <p class="pp">Top speed to chase your dreams!</p>
+                    </div>
+                    <div class="btn"><button class="enter">Enter</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="../images/slider4.jpg" alt="loading slider" class="slider_image">
+            <div class="img_content">
+                <div class="max_width_para flex">
+                    <div class="paras">
+                        <p class="hp">Royale Pass Season 19:Traverse!</p>
+                        <p class="pp">Heroes Come In All Size</p>
+                    </div>
+                    <div class="btn"><button class="enter">Enter</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="../images/slider5.jpg" alt="loading slider" class="slider_image">
+            <div class="img_content">
+                <div class="max_width_para flex">
+                    <div class="paras">
+                        <p class="hp">Titan Strikes</p>
+                        <p class="pp">Witness the Titans wage a legendary battle in a whole new way!</p>
+                    </div>
+                    <div class="btn"><button class="enter">Enter</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="../images/slider2.jpg" alt="loading slider" class="slider_image">
+            <div class="img_content">
+                <div class="max_width_para flex">
+                    <div class="paras">
+                        <p class="hp">The Blood Raven X-Suit is here!</p>
+                        <p class="pp">There is only silence. The Blood has arrived</p>
+                    </div>
+                    <div class="btn"><button class="enter">Enter</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="../images/slider3.jpg" alt="loading slider" class="slider_image">
+            <div class="img_content">
+                <div class="max_width_para flex">
+                    <div class="paras">
+                        <p class="hp">Shubham  is Online</p>
+                        <p class="pp">Shubham is now available with the Demollition Zone, Sticky Bomb, and Panzerfaust! Things are heating up!</p>
+                    </div>
+                    <div class="btn"><button class="enter">Enter</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- making the download buttons -->
+        <div class="download_links">
+            <a href="#" class="downloads1"><img src="../images/download1.png" alt="loading"></a>
+            <a href="#" class="downloads1"><img src="../images/download2.png" alt="loading"></a>
+            <a href="#" class="downloads1"><img src="../images/download3.png" alt="loading"></a>
+        </div>
+
+        <!-- making the media links -->
+        <div class="social_sites flex">
+            <a href="#" class="social_links"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social_links"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social_links"><i class="fa fa-youtube-play"></i></a>
+            <a href="#" class="social_links"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social_links"><i class="fa fa-vk"></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    let slideIndex = 0;
+
+    slider();
+    function slider(){
+        const slider = document.querySelectorAll('.slider');
+        for(var i=0; i<slider.length; i++){
+            slider[i].style.display = 'none';
+        }
+        slider[slideIndex].style.display = 'block';
+        if(slideIndex<(slider.length-1)){
+            slideIndex++;
+        }
+        else{
+            slideIndex= 0;
+        }
+    }
+    setInterval(slider , 2500)
+</script>
+</html>
